@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class MainController {
-    @GetMapping("/")
-    public String home(Model model) {
-        model.addAttribute("title", "Simple PLL calculator");
-        return "home";
+public class PlotController {
+    @GetMapping("/plot")
+    public String plot(Model model) {
+        model.addAttribute("title", "Plot result");
+        return "plot";
     }
 }
