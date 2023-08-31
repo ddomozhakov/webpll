@@ -15,11 +15,16 @@
             <p class="lead">Enter the parameters and click on the "Run" button.</p>
             <input type="text" name="UI" placeholder="Unit interval, ps" class="form-control" style="width:250px"><br>
             <input type="text" name="Jdet" placeholder="deterministic jitter, ps" class="form-control" style="width:250px"><br>
-            <input type="text" name="Rdet" placeholder="random jitter, ps" class="form-control" style="width:250px"><br>
+            <input type="text" name="Jran" placeholder="random jitter, ps" class="form-control" style="width:250px"><br>
             <input type="text" name="Tsetup" placeholder="RX setup time, ps" class="form-control" style="width:250px"><br>
             <input type="text" name="Thold" placeholder="RX hold time, ps" class="form-control" style="width:250px"><br>
+<!--            <input type="text" name="Result" placeholder="Result, ps" th:text="'result: ' + ${result}" class="form-control" style="width:300px"><br>-->
+<!--            <a class="btn btn-lg btn-primary" href="/calc" role="button"> RUN </a>-->
+<!--            <p><input type="submit" value="Submit" /></p>-->
+            <h1><p th:text="'result: ' + ${result}"/></h1>
+            <button type="calc" class="btn btn-success"> Calculate </button>
+
         </form>
-        <a class="btn btn-lg btn-primary" href="/calc" role="button"> RUN </a>
     </div>
 </main>
 
